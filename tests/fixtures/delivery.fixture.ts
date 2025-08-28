@@ -53,7 +53,7 @@ export const test = base.extend<Fixtures>({
           courierId: null,
           customerName: 'mocked customer',
           customerPhone: '99887766',
-          comment: '',
+          comment: 'test comment',
           id: 9999,
         }),
       }),
