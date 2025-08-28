@@ -37,7 +37,6 @@ export const test = base.extend<Fixtures>({
   },
 
   mainPage: async ({ context, auth }, use) => {
-
     const mainPage = await context.newPage()
     await mainPage.goto(SERVICE_URL)
     await context.addInitScript((token) => {
@@ -60,7 +59,7 @@ export const test = base.extend<Fixtures>({
       }),
     )
     await use(mainPage)
-  }
+  },
 })
 
 export { expect } from '@playwright/test'
